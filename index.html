@@ -10,7 +10,21 @@
             title: 'Some title',
             svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
             onClick: () => {
-              miro.board.widgets.create({type: 'sticker', text: 'Hellow'})
+              miro.board.widgets.create({
+                                                type: "shape",
+                                                text: "".concat(f, "%"),
+                                                width: 20,
+                                                height: 20,
+                                                x: 50,
+                                                y: 50,
+                                                style: {
+                                                    borderWidth: 0,
+                                                    backgroundColor: "#4262ff",
+                                                    fontSize: 8,
+                                                    textAlign: "c",
+                                                    textAlignVertical: "m",
+                                                    textColor: "#ffffff"
+                                                })
             }
           }
         }
